@@ -2,7 +2,7 @@
 
 ## 📱 Giới thiệu
 
-BKMindCare là một ứng dụng di động được xây dựng bằng React Native và Expo, nhằm hỗ trợ sinh viên và người dùng quản lý sức khỏe tâm thần của mình. Ứng dụng cung cấp các tính năng như theo dõi tâm trạng, đặt lịch hẹn với bác sĩ, chat tư vấn, và các bài kiểm tra sức khỏe tâm thần.
+BKMindCare là hệ thống hỗ trợ tâm lý cho sinh viên Trường Đại học Bách khoa - ĐHQG. TP.HCM. Ứng dụng di động được xây dựng bằng React Native và Expo, nhằm hỗ trợ sinh viên và người dùng quản lý sức khỏe tâm thần của mình. Ứng dụng cung cấp các tính năng như theo dõi tâm trạng, đặt lịch hẹn với bác sĩ, chat tư vấn, và các bài kiểm tra sức khỏe tâm thần.
 
 ## ✨ Tính năng chính
 
@@ -318,4 +318,3 @@ Nếu có câu hỏi hoặc vấn đề, vui lòng tạo issue trên repository.
 ---
 
 **Lưu ý**: Đây là phiên bản phát triển sử dụng mock data. Để sử dụng trong production, cần tích hợp backend thật và cấu hình Firebase đầy đủ.
-
