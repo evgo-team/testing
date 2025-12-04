@@ -1,5 +1,11 @@
 # PHẦN 3: UNIT TEST VỚI JEST + REACT NATIVE TESTING LIBRARY
 
+## test
+
+![coverage](./coverage-badge.svg)
+
+
+
 ## 📋 MỤC LỤC
 
 1. [Tổng Quan](#tổng-quan)
