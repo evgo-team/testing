@@ -28,10 +28,14 @@ const AboutScreen = () => {
     <View style={[styles.container, { paddingTop: insets.top }]}>
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+        <TouchableOpacity 
+          onPress={() => navigation.goBack()} 
+          style={styles.backButton}
+          testID="back-button" // Add this
+        >
           <Ionicons name="arrow-back" size={24} color={Colors.text} />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>About</Text>
+        <Text style={styles.headerTitle} testID="header-title">About</Text>
         <View style={styles.headerPlaceholder} />
       </View>
 
@@ -47,13 +51,13 @@ const AboutScreen = () => {
             style={styles.logo}
             resizeMode="contain"
           />
-          <Text style={styles.appName}>BKMindCare</Text>
-          <Text style={styles.appVersion}>Version 1.0.0</Text>
+          <Text style={styles.appName} testID="app-name">BKMindCare</Text>
+          <Text style={styles.appVersion} testID="app-version">Version 1.0.0</Text>
         </View>
 
         {/* About Section */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>About BKMindCare</Text>
+          <Text style={styles.appName} testID="app-name">BKMindCare</Text>
           <Text style={styles.sectionText}>
             BKMindCare is a comprehensive mental health support platform designed specifically for students at Ho Chi Minh City University of Technology (HCMUT). Our mission is to provide accessible, professional, and confidential mental health services to help students navigate their academic and personal challenges.
           </Text>
