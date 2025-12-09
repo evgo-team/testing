@@ -10,7 +10,8 @@
     "clear": "expo start -c",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "build": "expo export"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
@@ -20,7 +21,7 @@
     "@react-navigation/bottom-tabs": "^6.5.11",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
-    "expo": "^54.0.25",
+    "expo": "^54.0.27",
     "expo-linear-gradient": "~15.0.7",
     "expo-status-bar": "~3.0.8",
     "react": "19.1.0",
