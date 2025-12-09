@@ -1,11 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppointmentPopup Component Snapshot Tests should match snapshot when not visible 1`] = `null`;
-
-exports[`AppointmentPopup Component Snapshot Tests should match snapshot when visible 1`] = `
+exports[`AppointmentPopup Component Snapshot Tests should match snapshot for confirm-reject type 1`] = `
 <Modal
   animationType="fade"
   onRequestClose={[MockFunction]}
+  testID="appointment-modal"
   transparent={true}
   visible={true}
 >
@@ -36,6 +35,7 @@ exports[`AppointmentPopup Component Snapshot Tests should match snapshot when vi
         "justifyContent": "center",
       }
     }
+    testID="overlay"
   >
     <View
       accessibilityState={
@@ -72,6 +72,227 @@ exports[`AppointmentPopup Component Snapshot Tests should match snapshot when vi
             "padding": 24,
           }
         }
+        testID="confirm-reject-container"
+      >
+        <Text
+          style={
+            {
+              "color": "#4A90E2",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "marginBottom": 20,
+              "textAlign": "center",
+            }
+          }
+        >
+          Bạn có chắc chân muốn từ chối cuộc hẹn này?
+        </Text>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginBottom": 24,
+            }
+          }
+        />
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "gap": 12,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#4CAF50",
+                "borderRadius": 12,
+                "flex": 1,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              }
+            }
+            testID="cancel-reject-button"
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                }
+              }
+            >
+              Hủy
+            </Text>
+          </View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignItems": "center",
+                "backgroundColor": "#4A90E2",
+                "borderRadius": 12,
+                "flex": 1,
+                "justifyContent": "center",
+                "opacity": 1,
+                "paddingHorizontal": 20,
+                "paddingVertical": 14,
+              }
+            }
+            testID="confirm-reject-button"
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                }
+              }
+            >
+              Xác nhận
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`AppointmentPopup Component Snapshot Tests should match snapshot for success-confirm type 1`] = `
+<Modal
+  animationType="fade"
+  onRequestClose={[MockFunction]}
+  testID="appointment-modal"
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.5)",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+    testID="overlay"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "maxWidth": 400,
+          "width": "85%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 20,
+            "padding": 24,
+          }
+        }
+        testID="success-confirm-container"
       >
         <Text
           style={
@@ -94,27 +315,7 @@ exports[`AppointmentPopup Component Snapshot Tests should match snapshot when vi
               "marginBottom": 24,
             }
           }
-        >
-          <View
-            style={
-              {
-                "alignItems": "center",
-                "borderColor": "#4A90E2",
-                "borderRadius": 50,
-                "borderWidth": 3,
-                "height": 100,
-                "justifyContent": "center",
-                "width": 100,
-              }
-            }
-          >
-            <Text
-              color="#4CAF50"
-              name="checkmark"
-              size={50}
-            />
-          </View>
-        </View>
+        />
         <View
           accessibilityState={
             {
@@ -155,6 +356,7 @@ exports[`AppointmentPopup Component Snapshot Tests should match snapshot when vi
               "width": "100%",
             }
           }
+          testID="close-button"
         >
           <Text
             style={
@@ -173,3 +375,161 @@ exports[`AppointmentPopup Component Snapshot Tests should match snapshot when vi
   </View>
 </Modal>
 `;
+
+exports[`AppointmentPopup Component Snapshot Tests should match snapshot for success-reject type 1`] = `
+<Modal
+  animationType="fade"
+  onRequestClose={[MockFunction]}
+  testID="appointment-modal"
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "rgba(0, 0, 0, 0.5)",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+    testID="overlay"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "maxWidth": 400,
+          "width": "85%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#FFFFFF",
+            "borderRadius": 20,
+            "padding": 24,
+          }
+        }
+        testID="success-reject-container"
+      >
+        <Text
+          style={
+            {
+              "color": "#4A90E2",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "marginBottom": 20,
+              "textAlign": "center",
+            }
+          }
+        >
+          Từ chối thành công
+        </Text>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "marginBottom": 24,
+            }
+          }
+        />
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#4A90E2",
+              "borderRadius": 12,
+              "justifyContent": "center",
+              "opacity": 1,
+              "paddingHorizontal": 24,
+              "paddingVertical": 14,
+              "width": "100%",
+            }
+          }
+          testID="close-button"
+        >
+          <Text
+            style={
+              {
+                "color": "#FFFFFF",
+                "fontSize": 16,
+                "fontWeight": "600",
+              }
+            }
+          >
+            Đóng
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`AppointmentPopup Component Snapshot Tests should match snapshot when not visible 1`] = `null`;

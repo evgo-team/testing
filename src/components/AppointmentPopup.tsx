@@ -28,14 +28,12 @@ export const AppointmentPopup: React.FC<AppointmentPopupProps> = ({
     switch (type) {
       case 'success-confirm':
         return (
-          <View style={styles.popupContainer}>
+          <View style={styles.popupContainer} testID="success-confirm-container">
             <Text style={styles.title}>Xác nhận thành công</Text>
             <View style={styles.iconContainer}>
-              <View style={styles.iconCircle}>
-                <Ionicons name="checkmark" size={50} color={Colors.success} />
-              </View>
             </View>
             <TouchableOpacity
+              testID="close-button"
               style={styles.closeButton}
               onPress={onClose}
               activeOpacity={0.7}
@@ -47,17 +45,15 @@ export const AppointmentPopup: React.FC<AppointmentPopupProps> = ({
 
       case 'confirm-reject':
         return (
-          <View style={styles.popupContainer}>
+          <View style={styles.popupContainer} testID="confirm-reject-container">
             <Text style={styles.title}>
               Bạn có chắc chân muốn từ chối cuộc hẹn này?
             </Text>
             <View style={styles.iconContainer}>
-              <View style={[styles.iconCircle, styles.errorIconCircle]}>
-                <Ionicons name="alert" size={40} color={Colors.background} />
-              </View>
             </View>
             <View style={styles.buttonRow}>
               <TouchableOpacity
+                testID="cancel-reject-button"
                 style={[styles.actionButton, styles.cancelButton]}
                 onPress={onClose}
                 activeOpacity={0.7}
@@ -65,11 +61,12 @@ export const AppointmentPopup: React.FC<AppointmentPopupProps> = ({
                 <Text style={styles.cancelButtonText}>Hủy</Text>
               </TouchableOpacity>
               <TouchableOpacity
+                testID="confirm-reject-button"
                 style={[styles.actionButton, styles.confirmButton]}
                 onPress={onConfirm}
                 activeOpacity={0.7}
               >
-                <Text style={styles.confirmButtonText}>Đồng ý</Text>
+                <Text style={styles.confirmButtonText}>Xác nhận</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -77,14 +74,12 @@ export const AppointmentPopup: React.FC<AppointmentPopupProps> = ({
 
       case 'success-reject':
         return (
-          <View style={styles.popupContainer}>
+          <View style={styles.popupContainer} testID="success-reject-container">
             <Text style={styles.title}>Từ chối thành công</Text>
             <View style={styles.iconContainer}>
-              <View style={styles.iconCircle}>
-                <Ionicons name="close" size={50} color={Colors.error} />
-              </View>
             </View>
             <TouchableOpacity
+              testID="close-button"
               style={styles.closeButton}
               onPress={onClose}
               activeOpacity={0.7}
@@ -101,13 +96,14 @@ export const AppointmentPopup: React.FC<AppointmentPopupProps> = ({
 
   return (
     <Modal
+      testID="appointment-modal"
       visible={visible}
       transparent
       animationType="fade"
       onRequestClose={onClose}
     >
       <TouchableWithoutFeedback onPress={onClose}>
-        <View style={styles.overlay}>
+        <View style={styles.overlay} testID="overlay">
           <TouchableWithoutFeedback>
             <View style={styles.modalContent}>
               {renderContent()}
